@@ -23,13 +23,18 @@ const GetData = async() =>{
         const thumb = document.createElement('img')
         thumb.src = news.urlToImage
 
-        notice.appendChild(title)
-        notice.appendChild(linkToNotice)
-        if(thumb.src) =
-        notice.appendChild(thumb)
+        const infoContainer = document.createElement('div')
+        infoContainer.classList.add('info')
 
-        newsSection.appendChild(notice)
-        console.log(news)
+        if(title && linkToNotice && news.urlToImage){infoContainer.appendChild(title)
+        infoContainer.appendChild(linkToNotice)
+
+        notice.appendChild(infoContainer)
+        if(thumb){
+            notice.appendChild(thumb)
+        }
+
+        newsSection.appendChild(notice)}
     });
 }
 GetData()
