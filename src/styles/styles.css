@@ -7,6 +7,23 @@ header{
     background-color: #333;
     font-size: 2rem;
     padding: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+}
+.search-container input, .search-container button{
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.search-container button{
+    border-radius: 0 2rem 2rem 0;
+    background-color: #555;
+    color: white;
+    font-size: 1rem;
 }
 body{
     background-color: rgb(235, 235, 235);
@@ -86,5 +103,10 @@ body{
 @media all and (max-width: 557px) {
     .logo{
         text-align: center;
+    }
+}
+@media all and (max-width: 314px) {
+    .news a{
+        font-size: 1rem;
     }
 }
